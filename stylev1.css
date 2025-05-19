@@ -1,0 +1,14 @@
+h1{
+    color: aqua;
+    font-family: sans-serif;
+}
+p{font-size: 30px;
+color: darkred;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+ ul{
+    list-style-type: square;
+ }
+ ol {
+    list-style: lower-roman;
+ }
