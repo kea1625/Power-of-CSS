@@ -1,21 +1,26 @@
 body{
     margin: 0;
     font-family: 'Times New Roman', Times, serif;
-    background: linear-gradient(123deg, aqua, #06cd27);
-    color: black;
-    display: flex;
+    background: linear-gradient(90deg, rgb(215, 239, 239), #bcd6cc91);
+    background-size: cover; 
+    background-position: center;
+    display:flex;
+    justify-content: center;
     flex-direction: column;
-    align-items: center;
-    padding: 32px;
+    text-align: center;
+    padding: 30px;
 }
 
+
 header{
-    background: white;
-    padding: 16px 32px;
-    border-radius: 20px;
-    box-shadow: 0 40px 20px rgba((0,0,0,0.1));
+    background: rgb(255, 255, 255);
+    padding: 16PX 32PX 16PX 32PX;
+    border-radius: 40px;
+    box-shadow: 0 5px 5px rgb(0,0,0,0.95);
+    text-align: center;
     margin-bottom: 32px;
-    animation: fadenin 1s ease-out forwards;
+    animation: fadenIn 4s ease-out forwards;
+
 }
 
 h1{
@@ -40,38 +45,40 @@ h4{
 }
 
 p{
-    font-size: 25px;
-}
-.card {
-.card {
-    background: white;
-    padding: 24px;
-    border-radius: 15px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
-    transition: transform 0.3s ease, box-shadow 0.3s;
-    width: 300px;
-    margin: 1rem;
-}
-.card:hover{
-            transform: scale(2);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    font-size: 20px;
 }
 
+.card {
+    background: rgb(255, 255, 254);
+    padding: 24px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(46, 12, 12, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s;
+    width: 400px;
+    margin: 20px;
+}
+.card:hover{
+            transform: scale(1.5);
+            box-shadow: 3PX 5px 10px rgba(0,0,0,0.2);
+            background-color: chocolate;
+            color: white;
+            cursor:pointer;
+}           
+
 .cards {
+    background-color: azure;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content:center;
     gap: 1rem;
 }
 
-@keyframes fadenin {
-@keyframes fadenin {
-    from{ opacity: 0;transform: translateY(-20px);}
-    to{opacity: 1; transform: translateY(0);}
+@keyframes fadenIn {
+    from{ opacity: 0;transform: translateY(-200px);}
+    to{opacity: 1; transform: translateY(0px)}
 }
 
-@media (max-width:600px) {
-@media (max-width:600px) {
+@media (max-width: 600px) {
     h1{
         font-size: 32px;
     }
@@ -79,3 +86,4 @@ p{
     .card {
         width: 50%;
     }
+}
